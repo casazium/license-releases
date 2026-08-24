@@ -30,11 +30,16 @@ https://github.com/casazium/license-releases/releases/latest/download/casazium-l
 and a short README, wired up to get a self-hosted deployment running
 quickly. Unlike the SEA builds above, this one is a plain tracked file
 in this repo (small enough that git doesn't mind, and there's no CI
-producing it), not a Release asset — update it by committing a new
-version directly.
+producing it).
 
-*(How docs.casazium.com should link to each of these is still being
-decided — this repo consolidates the artifacts themselves first.)*
+**This copy is a backup mirror, not the live link.** The zip never had
+the two problems that forced the SEA builds to live here (it's tiny,
+and its source was never private), so `docs.casazium.com` links its own
+same-origin copy (`docs/public/downloads/casazium-license-selfhosted.zip`
+in `casazium/casazium`) directly — a same-domain download is better UX
+than sending visitors to a raw `github.com` URL for no real benefit.
+When the zip's contents change, update both copies by hand; only the
+SEA builds are the authoritative, single-source artifact here.
 
 Full installation instructions:
 [docs.casazium.com](https://docs.casazium.com/docs/license-server/getting-started/installation).
