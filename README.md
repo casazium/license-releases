@@ -1,10 +1,8 @@
 # casazium/license-releases
 
-This repository holds **no source code**. It exists only to give
-downloadable artifacts for the
-[Casazium License Server](https://docs.casazium.com/docs/license-server/)
-a public, unauthenticated home — for two different reasons, so it hosts
-two different kinds of artifact:
+This repository holds **no source code**. It exists only to give the
+[Casazium License Server](https://docs.casazium.com/docs/license-server/intro)'s
+single-executable builds a public, unauthenticated home.
 
 ## Single-executable (SEA) builds
 
@@ -24,22 +22,14 @@ https://github.com/casazium/license-releases/releases/latest/download/casazium-l
 https://github.com/casazium/license-releases/releases/latest/download/casazium-license-darwin-arm64
 ```
 
-## Self-hosted quickstart package
+## Docker / self-hosted downloads
 
-`casazium-license-selfhosted.zip` — a `docker-compose.yml`, `.env.example`,
-and a short README, wired up to get a self-hosted deployment running
-quickly. Unlike the SEA builds above, this one is a plain tracked file
-in this repo (small enough that git doesn't mind, and there's no CI
-producing it).
+The Docker Compose downloads live on the docs site, not here:
 
-**This copy is a backup mirror, not the live link.** The zip never had
-the two problems that forced the SEA builds to live here (it's tiny,
-and its source was never private), so `docs.casazium.com` links its own
-same-origin copy (`docs/public/downloads/casazium-license-selfhosted.zip`
-in `casazium/casazium`) directly — a same-domain download is better UX
-than sending visitors to a raw `github.com` URL for no real benefit.
-When the zip's contents change, update both copies by hand; only the
-SEA builds are the authoritative, single-source artifact here.
+- **License Server and its admin console** (recommended):
+  [casazium-license-selfhosted-bundle.zip](https://docs.casazium.com/downloads/casazium-license-selfhosted-bundle.zip)
+- **License Server only**:
+  [casazium-license-selfhosted.zip](https://docs.casazium.com/downloads/casazium-license-selfhosted.zip)
 
 Full installation instructions:
 [docs.casazium.com](https://docs.casazium.com/docs/license-server/getting-started/installation).
@@ -48,4 +38,4 @@ Full installation instructions:
 
 GitHub auto-generates a `Source code (zip)`/`(tar.gz)` archive for every
 tag on every public repo — there's no way to suppress them. They contain
-only this README, not the actual product source.
+only this README and `SECURITY.md`, not the actual product source.
